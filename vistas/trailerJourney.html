@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Journey</title>
+    <link rel="stylesheet" href="../estilos/estilos.css" >
+    <link rel="stylesheet" href="../estilos/reproductor.css" >
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@400;600;700&display=swap"
+        rel="stylesheet">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="../js/jquery.js"></script>
+    <script src="../js/funciones-reproductor.js" defer></script>
+
+</head>
+
+
+
+<body>
+    <header id="cabecera">
+        <input type="checkbox" id="menu-toggle" style="display: none;">
+        <label class="menu-toggle" for="menu-toggle" id="menuHamburguesa">
+            <span></span>
+            <span></span>
+            <span></span>
+        </label>
+        <!-- El logo te redirige al inicio al igual que la opcion inicio del menu -->
+            <a href="../index.html">
+                <img src="../img/Iconos/Logo.svg" alt="Journey" class="logo">
+            </a>
+        <a id="usuarioIcono">
+            <img src="../img/Iconos/Usuario.svg" alt="Usuario">
+        </a>
+    </header>
+    <div id="contenedorFijo">
+        <div id="menuNavegacion">
+            <nav id="opcionesMenu">
+                <a href="../index.html">
+                    <div class="sucursal">
+                        <h2>Inicio</h2>
+                    </div>
+                </a>
+                <a href="cochesDisponibles.html">
+                    <div class="sucursal">
+                        <h2>Coches disponibles</h2>
+                    </div>
+                </a>
+                <a href="sobreNosotros.html">
+                    <div class="sucursal">
+                        <h2>Sobre nosotros</h2>
+                    </div>
+                </a>
+                <a href="serviciosJourney.html">
+                    <div class="sucursal">
+                        <h2>Servicios Journey</h2>
+                    </div>
+                </a>
+
+                <a href="accesibilidad.html">
+                    <div class="sucursal">
+                        <h2>Accesibilidad</h2>
+                    </div>
+                </a>
+    
+                <a href="trailerJourney.html">
+                    <div class="sucursal">
+                        <h2>Trailer Journey</h2>
+                    </div>
+                </a>
+            </nav>
+        </div>
+
+        <main>
+            <div class="contenedorCentrado">
+                <h2>Journey, la aventura comienza</h2>
+            </div>
+            <div class="player">
+                <video id="video" poster="../videos/Journey.png">
+                    <source src="../videos/videos/Journey.webm" type="video/webm">
+                    <source src="../videos/videos/Journey.mp4" type="video/mp4">
+                    <source src="videos/videos/trailer.ogv" type="video/ogg">
+                    Tu navegador no soporta el formato de video.
+                </video>
+            
+                <div class="controls">
+                    <div class="time">
+                        <span id="tiempo">0:00/0:00</span>
+                        <input type="range" id="barraTiempo" value="0" step="1" min="0" max="100">
+                    </div>
+                    <div class="buttons">
+                        <button id="reproducir" class="btn" tabindex="1"><i id="btnPlay" class="fas fa-play"></i></button>
+                        <button id="parar" class="btn" tabindex="2"><i class="fas fa-stop"></i></button>
+                        <button id="restart" class="btn" tabindex="3"><i class="fas fa-undo"></i></button>
+                        <button id="atras" class="btn" tabindex="4"><i class="fas fa-backward"></i></button>
+                        <button id="adelante" class="btn" tabindex="5"><i class="fas fa-forward"></i></button>
+                        <span id="speedLabel">Velocidad: </span>
+                        <input type="range" id="speedControl" value="1" min="0.5" max="2" step="0.1" tabindex="6">
+                        <span id="speed" tabindex="7">x1</span>
+                        <button id="mute" class="btn" tabindex="8"><i id="btnMute" class="fas fa-volume-up"></i></button>
+                        <input type="range" id="volume" value="1" min="0" max="1" step="0.01" tabindex="9">
+                        <button id="fullscreen" class="btn" tabindex="10"><i class="fas fa-expand"></i></button>
+                    </div>
+                </div>
+            </div>
+
+        </main>
+
+    </div>
+    <footer>
+        <div id="iconosFooter">
+            <img alt="logo" src="../img/Iconos/Logo.svg" id="logo2" class="logo">
+            <img alt="facebook" src="../img/Iconos/Facebook.svg" id="facebook" class="redes">
+            <img alt="twitter" src="../img/Iconos/Twitter.svg" id="twitter" class="redes">
+            <img alt="instagram" src="../img/Iconos/Instagram.svg" id="instagram" class="redes">
+        </div>
+        <div id="textoFooter">
+            <a href="../index.html" class="enlaces" id="enseñarCookies">Ajustes de cookies</a>
+            <a href="politicaPrivacidad.html" id="privacidad" class="enlaces">Politica de privacidad</a>
+            <a href="condicionesGenerales.html" id="condiciones" class="enlaces">Condiciones generales</a>
+            <a href="ayuda.html" id="ayuda" class="enlaces">Ayuda</a>
+            <span>© Journey 2025</span>
+        </div>
+
+    </footer>
+</body>
+
+
+</html>

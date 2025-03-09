@@ -1,0 +1,90 @@
+.player {
+    width: 100%;
+    max-width: 800px;
+    background: #000;
+    border-radius: 8px;
+    overflow: hidden;
+    margin: 0 auto;
+    margin-top: 5rem;
+}
+
+video {
+    width: 100%;
+    display: block;
+}
+
+.controls {
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+}
+
+.time {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+#barraTiempo {
+    width: 100%;
+}
+
+.buttons {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 10px;
+}
+
+.buttons button, #speed, #speedLabel {
+    background: none;
+    border: none;
+    color: white;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+#speedControl {
+    width: 100%;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+#fullscreen {
+    background: none;
+    border: none;
+    color: white;
+    font-size: 24px;
+    cursor: pointer;
+    align-self: flex-end;
+}
+
+#tiempo {
+    color: white;
+}
+
+
+/* Estilos responsive */
+@media (max-width: 600px) {
+    .buttons {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .buttons button {
+        margin-bottom: 8px;
+    }
+
+    .volume {
+        flex-direction: column;
+    }
+}
+
+button[tabindex="1"], button[tabindex="2"], button[tabindex="3"], 
+button[tabindex="4"], button[tabindex="5"], button[tabindex="6"], 
+button[tabindex="7"], button[tabindex="8"], button[tabindex="9"], 
+button[tabindex="10"] {
+    border: 2px solid transparent;
+}
+

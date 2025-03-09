@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Journey</title>
+    <link rel="stylesheet" href="../estilos/estilos.css" >
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@400;600;700&display=swap"
+        rel="stylesheet">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="../js/jquery.js"></script>
+
+</head>
+
+
+
+<body>
+    <header id="cabecera">
+        <input type="checkbox" id="menu-toggle" style="display: none;">
+        <label class="menu-toggle" for="menu-toggle" id="menuHamburguesa">
+            <span></span>
+            <span></span>
+            <span></span>
+        </label>
+        <!-- El logo te redirige al inicio al igual que la opcion inicio del menu -->
+            <a href="../index.html">
+                <img src="../img/Iconos/Logo.svg" alt="Journey" class="logo">
+            </a>
+        <a id="usuarioIcono">
+            <img src="../img/Iconos/Usuario.svg" alt="Usuario">
+        </a>
+    </header>
+    <div id="contenedorFijo">
+        <div id="menuNavegacion">
+            <nav id="opcionesMenu">
+                <a href="../index.html">
+                    <div class="sucursal">
+                        <h2>Inicio</h2>
+                    </div>
+                </a>
+                <a href="cochesDisponibles.html">
+                    <div class="sucursal">
+                        <h2>Coches disponibles</h2>
+                    </div>
+                </a>
+                <a href="sobreNosotros.html">
+                    <div class="sucursal">
+                        <h2>Sobre nosotros</h2>
+                    </div>
+                </a>
+                <a href="serviciosJourney.html">
+                    <div class="sucursal">
+                        <h2>Servicios Journey</h2>
+                    </div>
+                </a>
+
+                <a href="accesibilidad.html">
+                    <div class="sucursal">
+                        <h2>Accesibilidad</h2>
+                    </div>
+                </a>
+    
+                <a href="trailerJourney.html">
+                    <div class="sucursal">
+                        <h2>Trailer Journey</h2>
+                    </div>
+                </a>
+            </nav>
+        </div>
+
+
+
+        <div class="header">
+
+            <div class="titulo">
+                <span id="titulo">Termina tu reserva</span>
+            </div>
+        </div>
+
+        <main>
+            <div class="pagoFormulario">
+                <h3 class="pagoTitulo">¿Con qué tarjeta de crédito desea pagar?</h3>
+                <form>
+                    <input type="text" class="pagoInput" placeholder="Número de la tarjeta" pattern="^\d{13,19}$"
+                        title="Debe contener entre 13 y 19 dígitos sin espacios ni guiones." required>
+                    <span class="error-message"></span>
+
+                    <input type="text" class="pagoInput" placeholder="Nombre del titular de la tarjeta"
+                        pattern="^[A-Za-zÁÉÍÓÚÑáéíóúñ ]{3,50}$"
+                        title="Debe contener solo letras y espacios, entre 3 y 50 caracteres." required>
+                    <span class="error-message"></span>
+
+                    <div class="pagoFila">
+                        <input type="text" class="pagoInput" placeholder="Fecha de expiración (MM/YY)"
+                            pattern="^(0[1-9]|1[0-2])\/\d{2}$" title="Formato válido: MM/YY, ejemplo: 09/24" required>
+                        <span class="error-message"></span>
+
+                        <input type="text" class="pagoInput" placeholder="CVV" pattern="^\d{3,4}$"
+                            title="Debe contener 3 o 4 dígitos." required>
+                        <span class="error-message"></span>
+                    </div>
+
+                    <h3 class="pagoTitulo">¿Dónde debemos enviar la factura?</h3>
+                    <div class="pagoFila">
+                        <input type="text" class="pagoInput" placeholder="País" pattern="^[A-Za-zÁÉÍÓÚÑáéíóúñ ]{2,20}$"
+                            title="Debe contener solo letras y espacios, mínimo 2 caracteres." required>
+                        <span class="error-message"></span>
+
+                        <input type="text" class="pagoInput" placeholder="Código Postal" pattern="^\d{4,10}$"
+                            title="Debe contener entre 4 y 10 números." required>
+                        <span class="error-message"></span>
+                    </div>
+
+                    <input type="text" class="pagoInput" placeholder="Dirección"
+                        pattern="^[A-Za-z0-9ÁÉÍÓÚÑáéíóúñ.,\- ]{5,100}$"
+                        title="Debe contener letras, números y algunos símbolos (,.-), mínimo 5 caracteres." required>
+                    <span class="error-message"></span>
+
+                    <input type="text" class="pagoInput" placeholder="Ciudad" pattern="^[A-Za-zÁÉÍÓÚÑáéíóúñ ]{2,30}$"
+                        title="Debe contener solo letras y espacios, mínimo 2 caracteres." required>
+                    <span class="error-message"></span>
+
+                    <input type="text" class="pagoInput" placeholder="Provincia" pattern="^[A-Za-zÁÉÍÓÚÑáéíóúñ ]{2,30}$"
+                        title="Debe contener solo letras y espacios, mínimo 2 caracteres." required>
+                    <span class="error-message"></span>
+
+                    <div class="pagoTotal">
+                        <strong>Total:</strong> <span class="pagoCantidad">000,00€</span>
+                    </div>
+                    <div class="contenedorCentrado">
+                        <button type="submit" class="botonConfirmar">
+                            Aceptar
+                        </button>
+                    </div>
+                </form>
+            </div>
+
+
+        </main>
+
+    </div>
+    <footer>
+        <div id="iconosFooter">
+            <img alt="logo" src="../img/Iconos/Logo.svg" id="logo2" class="logo">
+            <img alt="facebook" src="../img/Iconos/Facebook.svg" id="facebook" class="redes">
+            <img alt="twitter" src="../img/Iconos/Twitter.svg" id="twitter" class="redes">
+            <img alt="instagram" src="../img/Iconos/Instagram.svg" id="instagram" class="redes">
+        </div>
+        <div id="textoFooter">
+            <a href="../index.html" class="enlaces" id="enseñarCookies">Ajustes de cookies</a>
+            <a href="politicaPrivacidad.html" id="privacidad" class="enlaces">Politica de privacidad</a>
+            <a href="condicionesGenerales.html" id="condiciones" class="enlaces">Condiciones generales</a>
+            <a href="ayuda.html" id="ayuda" class="enlaces">Ayuda</a>
+            <span>© Journey 2025</span>
+        </div>
+    </footer>
+</body>
+
+
+</html>

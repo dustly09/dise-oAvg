@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Journey</title>
+    <link rel="stylesheet" href="../estilos/estilos.css" >
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@400;600;700&display=swap"
+        rel="stylesheet">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="../js/jquery.js"></script>
+</head>
+
+<body>
+    <header id="cabecera">
+        <input type="checkbox" id="menu-toggle" style="display: none;">
+        <label class="menu-toggle" for="menu-toggle" id="menuHamburguesa">
+            <span></span>
+            <span></span>
+            <span></span>
+        </label>
+        <!-- El logo te redirige al inicio al igual que la opcion inicio del menu -->
+            <a href="../index.html">
+                <img src="../img/Iconos/Logo.svg" alt="Journey" class="logo">
+            </a>
+        <a id="usuarioIcono">
+            <img src="../img/Iconos/Usuario.svg" alt="Usuario">
+        </a>
+    </header>
+
+    <div id="contenedorFijo">
+
+        <div id="menuNavegacion">
+            <nav id="opcionesMenu">
+                <a href="../index.html">
+                    <div class="sucursal">
+                        <h2>Inicio</h2>
+                    </div>
+                </a>
+                <a href="cochesDisponibles.html">
+                    <div class="sucursal">
+                        <h2>Coches disponibles</h2>
+                    </div>
+                </a>
+                <a href="sobreNosotros.html">
+                    <div class="sucursal">
+                        <h2>Sobre nosotros</h2>
+                    </div>
+                </a>
+                <a href="serviciosJourney.html">
+                    <div class="sucursal">
+                        <h2>Servicios Journey</h2>
+                    </div>
+                </a>
+
+                <a href="accesibilidad.html">
+                    <div class="sucursal">
+                        <h2>Accesibilidad</h2>
+                    </div>
+                </a>
+    
+                <a href="trailerJourney.html">
+                    <div class="sucursal">
+                        <h2>Trailer Journey</h2>
+                    </div>
+                </a>
+            </nav>
+        </div>
+
+
+        
+        <div class="header">
+            
+            <div class="titulo">
+                <span id="recogida">Fechas del viaje</span>
+            </div>
+        </div>
+        <main>
+            <div class="contenedorCentrado">
+                <div class="calendario">
+                    <div class="headerCalendario">
+                        <span class="arrow">◀</span>
+                        Octubre 2024
+                        <span class="arrow">▶</span>
+                    </div>
+                    <div class="dias">
+                        <div class="dia">DO</div>
+                        <div class="dia">LU</div>
+                        <div class="dia">MA</div>
+                        <div class="dia">MI</div>
+                        <div class="dia">JU</div>
+                        <div class="dia">VI</div>
+                        <div class="dia">SA</div>
+                    </div>
+                    <div class="numeros">
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                        <div>1</div>
+                        <div>2</div>
+                        <div>3</div>
+                        <div>4</div>
+                        <div>5</div>
+                        <div>6</div>
+                        <div>7</div>
+                        <div>8</div>
+                        <div>9</div>
+                        <div>10</div>
+                        <div>11</div>
+                        <div>12</div>
+                        <div>13</div>
+                        <div>14</div>
+                        <div>15</div>
+                        <div>16</div>
+                        <div>17</div>
+                        <div>18</div>
+                        <div class="hoy">19</div>
+                        <div>20</div>
+                        <div>21</div>
+                        <div>22</div>
+                        <div>23</div>
+                        <div>24</div>
+                        <div>25</div>
+                        <div>26</div>
+                        <div>27</div>
+                        <div>28</div>
+                        <div>29</div>
+                        <div>30</div>
+                        <div>31</div>
+                    </div>
+                </div>
+            </div>
+            <div class="contenedorCentrado">
+                <div class="horaViaje">
+                    <label for="inputViaje">Hora del viaje</label>
+                    <div>
+                        <input type="text" id="inputViaje" placeholder="6 : 10 PM">
+                        <img alt="reloj" src="../img/Iconos/Reloj.svg">
+                    </div>
+                </div>
+            </div>
+
+            <div class="contenedorCentrado">
+                <a href="detallesAlquiler.html" id="mostrarCoches" class="botonConfirmar">
+                    Aceptar
+                </a>
+            </div>
+
+        </main>
+        
+    </div>
+    <footer>
+        <div id="iconosFooter">
+            <img alt="logo" src="../img/Iconos/Logo.svg" id="logo2" class="logo">
+            <img alt="facebook" src="../img/Iconos/Facebook.svg" id="facebook" class="redes">
+            <img alt="twitter" src="../img/Iconos/Twitter.svg" id="twitter" class="redes">
+            <img alt="instagram" src="../img/Iconos/Instagram.svg" id="instagram" class="redes">
+        </div>
+        <div id="textoFooter">
+            <a href="../index.html" class="enlaces" id="enseñarCookies">Ajustes de cookies</a>
+            <a href="politicaPrivacidad.html" id="privacidad" class="enlaces">Politica de privacidad</a>
+            <a href="condicionesGenerales.html" id="condiciones" class="enlaces">Condiciones generales</a>
+            <a href="ayuda.html" id="ayuda" class="enlaces">Ayuda</a>
+            <span>© Journey 2025</span>
+        </div>
+    </footer>
+</body>
+
+</html>

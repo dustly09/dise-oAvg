@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Journey</title>
+    <link rel="stylesheet" href="../estilos/estilos.css" >
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@400;600;700&display=swap"
+        rel="stylesheet">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="../js/jquery.js"></script>
+</head>
+
+
+
+<body>
+    <div id="contenedorFijo">
+        <header class="header">
+            <a href="../index.html">
+                <img alt="salir" src="../img/Iconos/Salir(X).svg" id="salir">
+            </a>
+            <div class="titulo">
+                <span id="titulo">Registro de usuario</span>
+            </div>
+        </header>
+
+        <main>
+
+            <div class="pagoFormulario">
+                <form action="../index.html">
+                    <div class="contenedorInputs">
+                        <input type="text" class="inputRegistro" placeholder="Nombre"
+                            pattern="^[A-Za-zÁÉÍÓÚÑáéíóúñ]{2,30}$"
+                            title="Debe contener solo letras, sin espacios ni números, entre 2 y 30 caracteres."
+                            required>
+                        <span class="error-message"></span>
+            
+                        <input type="text" class="inputRegistro" placeholder="Apellidos"
+                            pattern="^[A-Za-zÁÉÍÓÚÑáéíóúñ ]{2,50}$"
+                            title="Debe contener solo letras y espacios, entre 2 y 50 caracteres." required>
+                        <span class="error-message"></span>
+            
+                        <input type="email" class="inputRegistro" placeholder="Correo electrónico"
+                            pattern="^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,7}$"
+                            title="Ingrese un correo válido, ejemplo: usuario@ejemplo.com" required>
+                        <span class="error-message"></span>
+            
+                        <input type="password" class="inputRegistro" placeholder="Contraseña"
+                            pattern="^(?=.*[A-Za-z])(?=.*\d)[A-Za-z\d@$!%*?&]{8,}$"
+                            title="Debe tener mínimo 8 caracteres, al menos una letra y un número" required>
+                        <span class="error-message"></span>
+                    </div>
+            
+                    <div class="contenedorCentrado">
+                        <button type="submit" class="botonConfirmarCuadrado">
+                            Siguiente
+                        </button>
+                    </div>
+                </form>
+            </div>
+            
+
+
+        </main>
+        
+    </div>
+    <footer>
+        <div id="iconosFooter">
+            <img alt="logo" src="../img/Iconos/Logo.svg" id="logo2" class="logo">
+            <img alt="facebook" src="../img/Iconos/Facebook.svg" id="facebook" class="redes">
+            <img alt="twitter" src="../img/Iconos/Twitter.svg" id="twitter" class="redes">
+            <img alt="instagram" src="../img/Iconos/Instagram.svg" id="instagram" class="redes">
+        </div>
+        <div id="textoFooter">
+            <a href="../index.html" class="enlaces" id="enseñarCookies">Ajustes de cookies</a>
+            <a id="privacidad" class="enlaces">Politica de privacidad</a>
+            <a id="condiciones" class="enlaces">Condiciones generales</a>
+            <a id="ayuda" class="enlaces">Ayuda</a>
+            <span>© Journey 2025</span>
+        </div>
+    </footer>
+</body>
+
+
+</html>

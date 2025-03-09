@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Journey</title>
+    <link rel="stylesheet" href="../estilos/estilos.css" >
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@400;600;700&display=swap"
+        rel="stylesheet">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="../js/jquery.js"></script>
+</head>
+
+
+
+<body>
+    <div id="contenedorFijo">
+        <header class="header">
+            <a href="../index.html">
+                <img alt="salir" src="../img/Iconos/Salir(X).svg" id="salir">
+            </a>
+            <div class="titulo">
+                <span id="titulo">Inicio de sesion</span>
+            </div>
+        </header>
+
+        <main>
+
+            <nav id="contGoogle" class="contGoogleApple">
+                <img alt="lupa" src='../img/Iconos/Google.svg' >
+                <span>Continuar con Google</span>
+            </nav>
+            <nav id="contApple" class="contGoogleApple">
+                <img alt="lupa" src='../img/Iconos/Apple.svg' >
+                <span>Continuar con Apple</span>
+            </nav>
+
+            <div id="lineas">
+                <div class="lineaGris"></div>
+                <span>o</span>
+                <div class="lineaGris"></div>
+            </div>
+
+            <div class="pagoFormulario">
+
+                <form id="loginForm" action="../index.html" method="post">
+                    <input type="email" class="pagoInput" placeholder="Correo electrónico"
+                        pattern="^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,7}$"
+                        title="Ingrese un correo válido, ejemplo: usuario@ejemplo.com" required>
+                    <span class="error-message"></span>
+                
+                    <input type="password" class="pagoInput" placeholder="Contraseña"
+                        pattern="^(?=.*[A-Za-z])(?=.*\d)[A-ZaA-z\d@$!%*?&]{8,}$"
+                        title="Debe tener mínimo 8 caracteres, al menos una letra y un número" required>
+                    <span class="error-message"></span>
+                
+                    <div class="contenedorCentrado">
+                        <span>¿No tiene cuenta? <a href="vistaRegistro.html" class="subrayadoNegro">Registrese</a></span>
+                    </div>
+                    <div class="contenedorCentrado">
+                        <button type="submit" class="botonConfirmarCuadrado">Siguiente</button>
+                    </div>
+                </form>
+                
+
+            </div>
+
+        </main>
+        
+    </div>
+    <footer>
+        <div id="iconosFooter">
+            <img alt="logo" src="../img/Iconos/Logo.svg" id="logo2" class="logo">
+            <img alt="facebook" src="../img/Iconos/Facebook.svg" id="facebook" class="redes">
+            <img alt="twitter" src="../img/Iconos/Twitter.svg" id="twitter" class="redes">
+            <img alt="instagram" src="../img/Iconos/Instagram.svg" id="instagram" class="redes">
+        </div>
+        <div id="textoFooter">
+            <a href="../index.html" class="enlaces" id="enseñarCookies">Ajustes de cookies</a>
+            <a href="politicaPrivacidad.html" id="privacidad" class="enlaces">Politica de privacidad</a>
+            <a href="condicionesGenerales.html" id="condiciones" class="enlaces">Condiciones generales</a>
+            <a href="ayuda.html" id="ayuda" class="enlaces">Ayuda</a>
+            <span>© Journey 2025</span>
+        </div>
+    </footer>
+</body>
+
+
+</html>

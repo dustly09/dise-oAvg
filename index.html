@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Journey</title>
+    <link rel="stylesheet" href="estilos/estilos.css" >
+    <link
+        href="https://fonts.googleapis.com/css2?family=Roboto:wght@400&family=Source+Sans+Pro:wght@400;600;700&display=swap"
+        rel="stylesheet">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="js/jquery.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/lightslider@1.1.6/dist/css/lightslider.min.css" >
+    <script src="https://cdn.jsdelivr.net/npm/lightslider@1.1.6/dist/js/lightslider.min.js"></script>
+</head>
+
+<body>
+    <div id="menuNavegacion">
+        <nav id="opcionesMenu">
+            <a href="vistas/cochesDisponibles.html">
+                <div >
+                    <h2>Coches disponibles</h2>
+                </div>
+            </a>
+            <a href="vistas/sobreNosotros.html">
+                <div>
+                    <h2>Sobre nosotros</h2>
+                </div>
+            </a>
+            <a href="vistas/serviciosJourney.html">
+                <div>
+                    <h2>Servicios Journey</h2>
+                </div>
+            </a>
+
+            <a href="vistas/accesibilidad.html">
+                <div class="sucursal">
+                    <h2>Accesibilidad</h2>
+                </div>
+            </a>
+
+            <a href="vistas/trailerJourney.html">
+                <div class="sucursal">
+                    <h2>Trailer Journey</h2>
+                </div>
+            </a>
+
+
+        </nav>
+    </div>
+
+
+    <header id="cabecera">
+        <input type="checkbox" id="menu-toggle" style="display: none;">
+        <label class="menu-toggle" for="menu-toggle" id="menuHamburguesa">
+            <span></span>
+            <span></span>
+            <span></span>
+        </label>
+
+        <img src="img/Iconos/Logo.svg" alt="Journey" class="logo">
+        <a id="usuarioIcono">
+            <img src="img/Iconos/Usuario.svg" alt="Usuario">
+        </a>
+    </header>
+
+    <main>
+        <div id="busqueda">
+            <div id="rectanguloBuscarCiudad">
+                <img src="img/Iconos/Lupa.svg" alt="Buscar">
+                <form action="vistas/lugarDeRecogida.html" id="f100">
+                    <input type="text" id="aeropuerto" placeholder="Aeropuerto, Ciudad, Estación...">
+                </form>
+            </div>
+            <picture>
+                <source srcset="img/Imagenes/PortadaEscritorio.webp" media="(min-width: 1024px)">
+                <img src="img/Imagenes/Portada.webp" alt="Portada" id="portada">
+            </picture>
+        </div>
+
+        <div class="cookie-modal" id="cookieModal">
+            <div class="cookie-caja">
+                <h2 class="cookie-titulo">Política de Cookies</h2>
+                <p class="cookie-texto">
+                    Lorem ipsum dolor sit amet consectetur. Et urna nec praesent vulputate aliquet ante.
+                    Tellus adipiscing fusce id ac. Adipiscing id at sed.
+                </p>
+                <div class="cookie-botones">
+                    <button class="cookie-aceptar" id="aceptarCookies">Acepto</button>
+                    <button class="cookie-rechazar" id="rechazarCookies">Rechazo</button>
+                </div>
+            </div>
+        </div>
+
+
+        <section id="seccion1">
+            <h2 class="titulos">EXPLORA SIN LÍMITES, PAGA SIN PREOCUPACIONES</h2>
+            <p>Alquiler de coches de calidad a precios accesibles. En toda España</p>
+            <hr id="lineaNegra">
+            <h2 class="titulos">EL COCHE PERFECTO PARA TU SIGUIENTE VIAJE TE ESTÁ ESPERANDO</h2>
+            <ul id="lightSlider">
+                <li><img src="img/Imagenes/Peugeot_208.webp" alt="Imagen 1" class="coche" ></li>
+                <li><img src="img/Imagenes/BMW_serie_1.webp" alt="Imagen 2" class="coche" ></li>
+                <li><img src="img/Imagenes/Volvo_EC40.webp" alt="Imagen 3" class="coche" ></li>
+            </ul>
+
+            <img src="img/Imagenes/Peugeot_208.webp" alt="Imagen 1" class="coche imagenFija" >
+            <img src="img/Imagenes/BMW_serie_1.webp" alt="Imagen 2" class="coche" >
+            <img src="img/Imagenes/Volvo_EC40.webp" alt="Imagen 3" class="coche" >
+            <h2 class="titulos">ALQUILER DE COCHES EN ESPAÑA CON JOURNEY</h2>
+            <p id="textoAlquiler">
+                En Journey ofrecemos alquiler de coches en España, destacándonos por permitir la recogida y devolución
+                en diferentes ciudades, brindando flexibilidad total a tus itinerarios. Nos enfocamos en ofrecer
+                comodidad, confianza y un proceso de reserva sencillo, siempre con vehículos bien mantenidos.
+            </p>
+        </section>
+    </main>
+
+    <footer>
+        <div id="iconosFooter">
+            <img src="img/Iconos/Logo.svg" alt="Logo" class="logo">
+            <img src="img/Iconos/Facebook.svg" alt="Facebook" id="facebook" class="redes">
+            <img src="img/Iconos/Twitter.svg" alt="Twitter" class="redes">
+            <img src="img/Iconos/Instagram.svg" alt="Instagram" class="redes">
+        </div>
+        <div id="textoFooter">
+            <a href="#" class="enlaces" id="mostrarCookiesModal">Ajustes de cookies</a>
+            <a href="vistas/politicaPrivacidad.html" id="privacidad" class="enlaces">Politica de privacidad</a>
+            <a href="vistas/condicionesGenerales.html" id="condiciones" class="enlaces">Condiciones generales</a>
+            <a href="vistas/ayuda.html" id="ayuda" class="enlaces">Ayuda</a>
+            <span>© Journey 2025</span>
+        </div>
+    </footer>
+</body>
+
+</html>
